@@ -78,6 +78,28 @@
 </body> 
 
 
+
+<script>
+  // Function to detect if the user is on a mobile device
+  function isMobile() {
+      return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+  }
+
+  // Function to redirect if the user is on a mobile device
+  function redirectToMobileWebsite() {
+      const mobileURL = "https://plingifyplug.github.io/Banned-Mobile/"; // Replace with the URL of the mobile website
+
+      // Check if the user is on a mobile device
+      if (isMobile()) {
+          // Redirect to the mobile website
+          window.location.replace(mobileURL);
+      }
+  }
+
+  // Call the redirect function when the page loads
+  redirectToMobileWebsite();
+</script>
+
 <script type="text/javascript">
   alert('This site rquires your Promo Code.');
 </script>
